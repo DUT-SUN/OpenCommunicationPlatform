@@ -1,3 +1,11 @@
 .App {
   height: 100vh;
+  overflow: hidden;
+}
+* {
+  caret-color: transparent;
+}
+
+input, button, a, select, textarea {
+  caret-color: auto;
 }

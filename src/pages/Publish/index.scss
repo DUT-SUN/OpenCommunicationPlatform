@@ -12,3 +12,24 @@
     height: 146px;
   }
 }
+* {
+  caret-color: auto !important;
+}
+
+// input, button, a, select, textarea {
+//   caret-color: auto; /* 将输入框、按钮、链接、选择框和文本区域的光标颜色设置为自动 */
+// }
+
+.article-contianer{
+  margin-left: 305px;
+  margin-top: 29px;
+  height: calc(100vh - 64px - 42px);
+  overflow: auto;
+  z-index: 99;
+  position: relative;
+}
+.right{
+  position: relative !important;
+  left: 100px;
+  width: 500px;
+}

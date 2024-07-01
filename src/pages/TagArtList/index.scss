@@ -1,0 +1,11 @@
+@keyframes colorChange {
+    0% { background-color: red; }
+    25% { background-color: orange; }
+    50% { background-color: yellow; }
+    75% { background-color: green; }
+    100% { background-color: blue; }
+}
+
+.colorChange {
+    animation: colorChange 5s infinite;
+}

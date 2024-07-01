@@ -1,15 +1,17 @@
 import { makeAutoObservable } from 'mobx'
 import { http } from '@/utils'
+import {message} from 'antd'
 class ChannelStore {
   channelList = []
   constructor() {
     makeAutoObservable(this)
   }
-  // article publish 哪里调用这个函数呢？
+
   loadChannelList = async () => {
-    const res = await http.get('/channels')
-    this.channelList = res.data.channels
+    const res = await http.get('/art/channels')
+    this.channelList = res.data
   }
+
 }
 
 export default ChannelStore
